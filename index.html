@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#120d0e">
+  <meta name="description" content="Особенное приглашение для Кристины от Артура">
+  <title>Для Кристины ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+  <section class="screen countdown" id="countdown">
+    <div class="countdown-content">
+      <div class="heart">♥</div>
+      <p class="eyebrow">Для Кристины</p>
+      <h2>Ещё чуть-чуть<br><em>терпения…</em></h2>
+      <div class="timer" aria-live="polite">
+        <div class="unit"><strong id="tDays">0</strong><span>дней</span></div>
+        <div class="unit"><strong id="tHours">00</strong><span>часов</span></div>
+        <div class="unit"><strong id="tMinutes">00</strong><span>минут</span></div>
+        <div class="unit"><strong id="tSeconds">00</strong><span>секунд</span></div>
+      </div>
+      <p class="final-text">Откроется 13 октября в 18:00</p>
+    </div>
+  </section>
+
+  <main id="content" hidden>
+    <section class="screen hero" id="start">
+      <div class="photo photo-1"></div>
+      <div class="shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Для Кристины</p>
+        <h1>У меня есть<br>для тебя<br><em>одно предложение…</em></h1>
+        <button class="button" data-scroll="#invite">Открыть <span>♡</span></button>
+      </div>
+      <div class="scroll-hint">листай вниз <span>↓</span></div>
+    </section>
+
+    <section class="screen invitation" id="invite">
+      <div class="photo photo-2"></div>
+      <div class="shade light"></div>
+      <div class="invite-content">
+        <p class="eyebrow">Кристина</p>
+        <h2>Я хочу пригласить<br>тебя на кое-что<br><em>особенное.</em></h2>
+
+        <div class="details">
+          <div class="detail">
+            <span class="label">Когда</span>
+            <strong>15.10.2026</strong>
+            <span>в 14:00</span>
+          </div>
+          <div class="line"></div>
+          <div class="detail">
+            <span class="label">Где</span>
+            <strong>Я за тобой заеду</strong>
+          </div>
+        </div>
+
+        <p class="from">Твой Артур <span>♥</span></p>
+        <button class="button yes" id="yesButton">Я согласна <span>♥</span></button>
+      </div>
+    </section>
+
+    <section class="screen final" id="final">
+      <div class="photo photo-3"></div>
+      <div class="shade"></div>
+      <div class="final-content">
+        <div class="heart">♥</div>
+        <p class="eyebrow">Тогда договорились</p>
+        <h2>15 октября.<br>14:00.</h2>
+        <p class="final-text">Я за тобой заеду.<br>До встречи, любовь моя.</p>
+        <p class="signature">Артур</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
